@@ -163,7 +163,7 @@ const Sidebar = () => {
     color: isOpen ? '#E6E6FA' : '#9C27B0',
     border: 'none',
     padding: '4px',
-    zIndex: 1100,
+    zIndex: 2100,
     display: isMobile ? 'block' : 'none',
     cursor: 'pointer',
   };

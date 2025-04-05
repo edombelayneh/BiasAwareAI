@@ -61,12 +61,12 @@ const Sidebar = () => {
 
   const toggleButtonStyle = {
     position: 'fixed',
-    top: 20,
-    left: 20,
+    top: 15,
+    left: 15,
     background: 'transparent',
-    color: 'black',
+    color: isOpen ? 'white' : 'black',
     border: 'none',
-    padding: '5px',
+    padding: '2px',
     zIndex: 1100,
     display: isMobile ? 'block' : 'none',
     cursor: 'pointer',

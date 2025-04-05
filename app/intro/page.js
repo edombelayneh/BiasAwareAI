@@ -1,5 +1,13 @@
 'use client';
 
+
+export default function Intro() {
+    return (<div>
+        <h1 className="text-5xl font-bold text-center mt-10">Welcome to the Intro Page</h1>
+        {/* <VideoSectionOne /> */}
+    </div>);
+}
+
 const VideoSectionOne = () => {
     const videoRef = useRef(null);
   

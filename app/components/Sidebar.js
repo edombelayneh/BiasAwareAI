@@ -5,22 +5,8 @@ import { useState, useEffect } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
-// const SidebarWrapper = styled.div`
-//   width: 220px;
-//   height: 100vh;
-//   background-color: #1e1e2f;
-//   color: white;
-//   padding: 20px;
-//   position: isMobile ? 'absolute' : 'fixed',
-//   top: 0;
-//   left: isMobile && !isOpen ? '-220px' : '0',
-//   transition: 'left 0.3s ease-in-out',
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-// `;
 const SidebarWrapper = styled.div`
-  width: 220px;
+  width: 150px;
   height: 100vh;
   background-color: #1e1e2f;
   color: white;
@@ -35,7 +21,6 @@ const SidebarWrapper = styled.div`
   z-index: 1000;
 `;
 
-
 const NavList = styled.ul`
   list-style: none;
   padding: 0;
@@ -49,12 +34,11 @@ const Sidebar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Detect screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    handleResize(); // run on mount
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -79,19 +63,17 @@ const Sidebar = () => {
           {isOpen ? <MenuOpenIcon /> : <MenuIcon />}
         </button>
       )}
-
         <h2>BiasAwareAI</h2>
         <NavList>
           <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-300">Intro</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-300">Race</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-300">Gender</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-300">Job Opportunities</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-300">Solutions</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-300">References</Link></li>
+          <li><Link href="/intro" className="hover:text-gray-300">Intro</Link></li>
+          <li><Link href="/race" className="hover:text-gray-300">Race</Link></li>
+          <li><Link href="/gender" className="hover:text-gray-300">Gender</Link></li>
+          <li><Link href="/job" className="hover:text-gray-300">Job Opportunities</Link></li>
+          <li><Link href="/solution" className="hover:text-gray-300">Solutions</Link></li>
+          <li><Link href="/reference" className="hover:text-gray-300">References</Link></li>
         </NavList>
       </SidebarWrapper>
-    
   );
 };
 

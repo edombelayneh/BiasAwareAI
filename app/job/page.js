@@ -70,7 +70,7 @@ export default function JobPage() {
           Transcript
         </Typography>
         <Typography variant="body1">
-          Welcome to the BiasAwareAI platform! In this introduction, we'll explore the goals of our project and how we aim to raise awareness about algorithmic bias in AI systems across various sectors including race, gender, and employment. Stay tuned as we guide you through each section.
+          Welcome to the BiasAwareAI platform! In this introduction, we&apos;ll explore the goals of our project and how we aim to raise awareness about algorithmic bias in AI systems across various sectors including race, gender, and employment. Stay tuned as we guide you through each section.
         </Typography>
       </Paper>
 

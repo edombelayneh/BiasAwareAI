@@ -44,7 +44,7 @@ export default function ReferencePage() {
             </a>
         </li>
         <li>
-            Kay, M., Matuszek, C., & Munson, S. A. (2015). Unequal representation and gender stereotypes in image search results for occupations. <i>CHI '15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems</i>, 3819–3828. Retrieved from{' '}
+            Kay, M., Matuszek, C., & Munson, S. A. (2015). Unequal representation and gender stereotypes in image search results for occupations. <i>CHI &apos;15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems</i>, 3819–3828. Retrieved from{' '}
             <a href="https://doi.org/10.1145/2702123.2702520" target="_blank" rel="noopener noreferrer">
                 https://doi.org/10.1145/2702123.2702520
             </a>

@@ -7,7 +7,7 @@ export default function RacePage() {
   const videoRef = useRef(null);
   const router = useRouter();
 
-  const handlePrev = () => router.push('/race');
+  const handlePrev = () => router.push('/intro');
   const handleNext = () => router.push('/gender'); 
 
   return (

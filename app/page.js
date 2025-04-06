@@ -1,6 +1,4 @@
 'use client';
-import Image from "next/image";
-import styles from "./page.module.css";
 import { keyframes } from '@emotion/react';
 import { Box, AppBar, Toolbar, useMediaQuery, IconButton,MenuIcon, Menu, MenuItem, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -8,6 +6,9 @@ import { useRouter } from 'next/navigation';
 import NewPageIcon from './components/NewPageIcon'; // adjust path if needed
 import CssBaseline from '@mui/material/CssBaseline';
 import { Container } from '@mui/material';
+// import theme from '/theme'; 
+// import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 
 const glowAnimation = keyframes`
@@ -66,6 +67,8 @@ const theme = createTheme({
 
 
 export default function Home() {
+  // const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -77,10 +80,9 @@ export default function Home() {
                 <Box
                   sx={{
                     display: 'grid',
-                    // gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
                     gridTemplateColumns: { xs: 'repeat(2, 1fr)', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
-                    gap: 4,
-                    p: 5,
+                    gap: isMobile ? 8 : 15,
+                    p: 4,
                     maxWidth: 1000,
                     margin: 'auto',
                   }}>

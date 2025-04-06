@@ -12,7 +12,18 @@ export default function ClientLayout({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* <Box sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row' }}>
+      <Box sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row' }}>
+        <Sidebar />
+        <Box component="main" sx={{ flex: 1, marginLeft: isMobile ? 0 : '250px', mt: 5}}>
+            {children}
+        </Box>
+        </Box>
+
+    </ThemeProvider>
+  );
+}
+
+   {/* <Box sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row' }}>
         <Sidebar />
         <Box
           component="main"
@@ -25,13 +36,3 @@ export default function ClientLayout({ children }) {
           {children}
         </Box>
       </Box> */}
-      <Box sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row' }}>
-        <Sidebar />
-        <Box component="main" sx={{ flex: 1, marginLeft: isMobile ? 0 : '200px' }}>
-            {children}
-        </Box>
-        </Box>
-
-    </ThemeProvider>
-  );
-}

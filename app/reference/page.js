@@ -37,33 +37,49 @@ export default function ReferencePage() {
         </Typography>
 
         <Box component="ul" sx={{ pl: 3 }}>
-          <li>
-            Barocas, S., Hardt, M., & Narayanan, A. (2019). *Fairness and Machine Learning*. Retrieved from{' '}
-            <a href="https://fairmlbook.org/" target="_blank" rel="noopener noreferrer">
-              https://fairmlbook.org/
+        <li>
+            Albaroudi, E., Mansouri, T., & Alameer, A. (2024). A comprehensive review of AI techniques for addressing algorithmic bias in job hiring. <i>AI, 5</i>(1), 383–404. Retrieved from{' '}
+            <a href="https://doi.org/10.3390/ai5010019" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.3390/ai5010019
             </a>
-          </li>
-          <li>
-            Buolamwini, J., & Gebru, T. (2018). Gender shades: Intersectional accuracy disparities in commercial gender classification. *Proceedings of Machine Learning Research*, 81, 1–15. Retrieved from{' '}
-            <a href="http://proceedings.mlr.press/v81/buolamwini18a.html" target="_blank" rel="noopener noreferrer">
-              http://proceedings.mlr.press/v81/buolamwini18a.html
+        </li>
+        <li>
+            Kay, M., Matuszek, C., & Munson, S. A. (2015). Unequal representation and gender stereotypes in image search results for occupations. <i>CHI '15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems</i>, 3819–3828. Retrieved from{' '}
+            <a href="https://doi.org/10.1145/2702123.2702520" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1145/2702123.2702520
             </a>
-          </li>
-          <li>
-            Noble, S. U. (2018). *Algorithms of Oppression: How Search Engines Reinforce Racism*. NYU Press.
-          </li>
-          <li>
-            Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. *Science*, 366(6464), 447–453.{' '}
-            <a href="https://doi.org/10.1126/science.aax2342" target="_blank" rel="noopener noreferrer">
-              https://doi.org/10.1126/science.aax2342
+        </li>
+        <li>
+            Marinucci, L., Mazzuca, C., & Gangemi, A. (2023). Exposing implicit biases and stereotypes in human and artificial intelligence: State of the art and challenges with a focus on gender. <i>AI & Society, 38</i>, 747–761. Retrieved from{' '}
+            <a href="https://doi.org/10.1007/s00146-022-01474-3" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1007/s00146-022-01474-3
             </a>
-          </li>
-          <li>
-            Raji, I. D., & Buolamwini, J. (2019). Actionable auditing: Investigating the impact of publicly naming biased performance results of commercial AI products. *Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society*.{' '}
-            <a href="https://dl.acm.org/doi/10.1145/3306618.3314244" target="_blank" rel="noopener noreferrer">
-              https://dl.acm.org/doi/10.1145/3306618.3314244
+        </li>
+        <li>
+            Sandoval-Martin, T., & Martínez-Sanzo, E. (2024). Perpetuation of gender bias in visual representation of professions in the generative AI tools DALL·E and Bing Image Creator. <i>Social Sciences, 13</i>(5), 250. Retrieved from{' '}
+            <a href="https://doi.org/10.3390/socsci13050250" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.3390/socsci13050250
             </a>
-          </li>
+        </li>
+        <li>
+            Chen, Z. (2023). Ethics and discrimination in artificial intelligence-enabled recruitment practices. <i>Humanities and Social Sciences Communications, 10</i>, Article 567. Retrieved from{' '}
+            <a href="https://doi.org/10.1057/s41599-023-02079-x" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1057/s41599-023-02079-x
+            </a>
+        </li>
+        <li>
+            Intahchomphoo, C., & Gundersen, O. E. (2020). Artificial intelligence and race: A systematic review. <i>Legal Information Management, 20</i>(2), 74–84. Retrieved from{' '}
+            <a href="https://doi.org/10.1017/S1472669620000183" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1017/S1472669620000183
+            </a>
+        </li>
+        <li>
+            Hofmann, V., Kalluri, P. R., Jurafsky, D., & King, S. (2024). AI generates covertly racist decisions about people based on their dialect. <i>Nature, 633</i>, 147–149. Retrieved from{' '}
+            <a href="https://doi.org/10.1038/s41586-024-07856-5" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1038/s41586-024-07856-5
+            </a>
+        </li>
+
         </Box>
       </Paper>
 

@@ -49,7 +49,7 @@ export default function GenderPage() {
             playsInline
             loop
           >
-            <source src="/video/FirstVideo.mp4" type="video/mp4" />
+            <source src="/video/GenderVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </Box>

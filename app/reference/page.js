@@ -11,14 +11,80 @@ export default function ReferencePage() {
   return (
     <Container maxWidth="md" sx={{ mt: 10, mb: 10 }}>
       {/* Thank You Message */}
-      <Typography variant="h3" align="center" fontWeight={700} color="primary" gutterBottom>
+      {/* <Typography variant="h3" align="center" fontWeight={700} color="primary" gutterBottom>
         Thank You!
-      </Typography>
+      </Typography> */}
 
       {/* Learning Message */}
-      <Typography variant="h6" align="center" sx={{ mt: 2, mb: 6 }}>
+      {/* <Typography variant="h6" align="center" sx={{ mt: 2, mb: 6 }}>
         We hope this experience helped you better understand the importance of addressing bias in AI and how it can impact real-world decisions. Let’s build a more equitable future together.
       </Typography>
+
+      <Typography variant="h3" align="center" fontWeight={700} color="primary" gutterBottom>
+        Project Details:
+      </Typography>
+      <Typography variant="h3" align="center" fontWeight={700} color="primary" gutterBottom>
+        Group Members:
+      </Typography>
+      <Typography variant="h6" align="center" sx={{ mt: 2, mb: 6 }}>
+        Edom Belayneh - Programmer
+      </Typography>
+      <Typography variant="h6" align="center" sx={{ mt: 2, mb: 6 }}>
+        Issac Cole - Voice Over Artist
+      </Typography>
+      <Typography variant="h6" align="center" sx={{ mt: 2, mb: 6 }}>
+        Sof Berlanga - Artist
+      </Typography>
+      <Typography variant="h3" align="center" fontWeight={700} color="primary" gutterBottom>
+        Thank you to Dr. Cheryl Geisthardt for her guidance and support throughout this project.
+      </Typography> */}
+      {/* Thank You Section */}
+<Paper
+  elevation={3}
+  sx={{
+    p: 5,
+    borderRadius: 4,
+    backgroundColor: '#f9f9ff',
+    color: '#4B0082',
+    textAlign: 'center',
+    mt: 10,
+    mb: 10,
+  }}
+>
+  <Typography variant="h3" fontWeight={700} color="primary" gutterBottom>
+    Thank You!
+  </Typography>
+
+  <Typography variant="h6" sx={{ mt: 2, mb: 4 }}>
+    We hope this experience helped you better understand the importance of addressing bias in AI
+    and how it can impact real-world decisions. Let’s build a more equitable future together.
+  </Typography>
+
+   {/* Faculty Acknowledgement */}
+   <Typography variant="h5" fontWeight={600} color="primary" sx={{ mt: 6 }}>
+    Special thanks to Dr. Cheryl Geisthardt for her guidance and support throughout this project.
+  </Typography>
+
+  {/* Project Details */}
+
+  <Typography variant="h4" fontWeight={700} color="primary" sx={{ mt: 4 }} gutterBottom>
+    Group Members
+  </Typography>
+
+  <Box sx={{ mt: 2 }}>
+    <Typography variant="h6" gutterBottom>
+      Edom Belayneh – Programmer
+    </Typography>
+    <Typography variant="h6" gutterBottom>
+      Issac Cole – Voice Over Artist
+    </Typography>
+    <Typography variant="h6" gutterBottom>
+      Sof Berlanga – Artist
+    </Typography>
+  </Box>
+
+ 
+</Paper>
 
       {/* References Section */}
       <Paper

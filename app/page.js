@@ -220,12 +220,12 @@ export default function Home() {
             margin: 'auto',
           }}
         >
-          <NewPageIcon page="/intro" text="Intro" imageName="/images/intro.jpg" />
+          <NewPageIcon page="/intro" text="Intro" imageName="/images/intro.png" />
           <NewPageIcon page="/race" text="Race" imageName="/images/race.png" />
-          <NewPageIcon page="/gender" text="Gender" imageName="/images/gender.jpg" />
+          <NewPageIcon page="/gender" text="Gender" imageName="/images/gender.png" />
           <NewPageIcon page="/job" text="Job Opportunities" imageName="/images/job.png" />
-          <NewPageIcon page="/solution" text="Solutions" imageName="/images/solution.jpg" />
-          <NewPageIcon page="/reference" text="References" imageName="/images/reference.jpg" />
+          <NewPageIcon page="/solution" text="Solutions" imageName="/images/solution.png" />
+          <NewPageIcon page="/reference" text="References" imageName="/images/reference.png" />
         </Box>
       </Container>
     </>

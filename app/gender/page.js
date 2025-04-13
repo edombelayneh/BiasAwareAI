@@ -34,7 +34,7 @@ export default function GenderPage() {
             paddingTop: '56.25%', // 16:9
           }}
         >
-          <video
+          {/* <video
             ref={videoRef}
             style={{
               position: 'absolute',
@@ -49,9 +49,24 @@ export default function GenderPage() {
             playsInline
             loop
           >
-            <source src="/video/GenderVideo.mp4" type="video/mp4" />
+            <source src="https://drive.google.com/uc?export=download&id=17zOobARrNg-AC5DNNFl4A9VQK_WhFhDF" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+
+<iframe
+      src="https://www.youtube.com/embed/JCDJRoLAwUA"
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        border: 'none',
+      }}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      title="Gender Video"
+    />
         </Box>
       </Box>
 

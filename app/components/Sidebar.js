@@ -8,29 +8,29 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 const glow = keyframes`
   0% {
-    box-shadow: 0 0 5px rgba(156, 39, 176, 0.3), 0 0 10px rgba(156, 39, 176, 0.2);
+    box-shadow: 0 0 5px rgba(156, 39, 176, 0.3);
   }
   50% {
-    box-shadow: 0 0 15px rgba(156, 39, 176, 0.6), 0 0 25px rgba(156, 39, 176, 0.3);
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.6);
   }
   100% {
-    box-shadow: 0 0 5px rgba(156, 39, 176, 0.3), 0 0 10px rgba(156, 39, 176, 0.2);
+    box-shadow: 0 0 5px rgba(156, 39, 176, 0.3);
   }
 `;
 
-// Wrapper that changes based on screen size
 const SidebarWrapper = styled.div`
-  width: 220px;
+  width: 240px;
   height: 100vh;
-  background-color: #1e1e2f;
+  background: linear-gradient(180deg, #1e1e2f 0%, #2b2b44 100%);
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   position: fixed;
   top: 0;
   left: 0;
   border-right: 2px solid #9C27B0;
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
 
   @media (max-width: 768px) {
     transform: ${(props) => (props.isOpen ? 'translateX(0)' : 'translateX(-100%)')};
@@ -44,7 +44,6 @@ const ToggleButton = styled.button`
   background: transparent;
   color: #9C27B0;
   border: none;
-  padding: 4px;
   z-index: 2000;
   cursor: pointer;
 
@@ -53,37 +52,48 @@ const ToggleButton = styled.button`
   }
 `;
 
+const Title = styled.h2`
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #E6E6FA;
+  margin-top: 60px;
+  margin-bottom: 40px;
+`;
+
 const NavList = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 60px 0 0 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 28px; // increased spacing between items
 `;
 
 const NavItem = styled(Link)`
   color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-  animation: ${glow} 2s infinite alternate;
+  padding: 14px 20px; // more padding for breathing room
+  border-radius: 12px;
+  transition: all 0.25s ease-in-out;
+  animation: ${glow} 3s ease-in-out infinite alternate;
 
   &:hover {
-    background-color: rgba(156, 39, 176, 0.15);
-    color: #e6e6fa;
-    transform: scale(1.03);
+    background-color: rgba(156, 39, 176, 0.2);
+    color: #fff8ff;
+    transform: translateX(5px);
   }
 `;
+
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      // Close the menu if switching to desktop
       if (window.innerWidth > 768 && isOpen) {
         setIsOpen(false);
       }
@@ -94,15 +104,12 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Toggle Button only shows on small screens */}
       <ToggleButton onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <MenuOpenIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
       </ToggleButton>
 
       <SidebarWrapper isOpen={isOpen}>
-        <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#E6E6FA', marginBottom: '30px', marginTop: '60px', gap: '50px' }}>
-          BiasAwareAI
-        </h2>
+        <Title>BiasAwareAI</Title>
         <NavList>
           <li><NavItem href="/">Home</NavItem></li>
           <li><NavItem href="/intro">Intro</NavItem></li>

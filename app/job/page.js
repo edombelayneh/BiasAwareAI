@@ -51,8 +51,8 @@ export default function JobPage() {
     };
   }, [currentTranscript]);
 
-  const handlePrev = () => router.push('/');
-  const handleNext = () => router.push('/race');
+  const handlePrev = () => router.push('/gender');
+  const handleNext = () => router.push('/solution');
 
   return (
     <Container maxWidth="md" style={{ marginTop: 80, marginBottom: 80 }}>

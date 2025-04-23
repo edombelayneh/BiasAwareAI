@@ -54,8 +54,8 @@ export default function RacePage() {
     };
   }, [currentTranscript]);
 
-  const handlePrev = () => router.push('/');
-  const handleNext = () => router.push('/race');
+  const handlePrev = () => router.push('/intro');
+  const handleNext = () => router.push('/gender');
 
   return (
     <Container maxWidth="md" style={{ marginTop: 80, marginBottom: 80 }}>
